@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/title_btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0dp"
+                    android:paddingLeft="0dp"
+                    android:src="@drawable/ic_arrow_back_white_24dp"/>
+
+                <TextView
+                    android:id="@+id/title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/help_page_title"
+                    android:textColor="#ffffff"
+                    android:textSize="19dp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"
+        android:singleLine="false"
+        android:scrollbars="vertical"
+        android:text="1、首次进入程序需要点击登录按钮进行登录；\n\n2、默认状态下隐藏了菜单，可以点击屏幕右侧红色箭头显示菜单；\n\n3、在下拉选择框中选择学年，学期等信息，然后点击按钮即可检索；\n\n4、其中成绩和考试安排检索格式为图片，单击可以详细放大查看；\n\n5、在详细查看图片界面，点击右上角菜单可以选择保存；\n\n5.5、如果保存失败请在应用程序设置中给予本程序存储权限；\n\n6、退出程序再次进入时默认保存了用户名和密码，直接检索信息即可；\n\n6.1、再次进入程序时；直接拉取成绩以及考试安排可能会出现表情包\n\n6.2、别惊讶，偷偷保存就行啦，这是大礼包；\n\n6.3、想再次查看成绩可点击按钮旁的“ 刷新登录信息 ”；\n\n6.4、其实上面说的都是废话；\n\n6.5、有时候运气好程序自己都会觉得你没登录让你等登录；\n\n6.6、这个时候也不用慌啦，就输个验证码就行 ╮(╯▽╰)╭ ；\n\n7、API最低限制的是Android 4.4，但是少部分机型会闪退，建议5.0系统及以上使用；\n\n8、如果bug反馈请联系：1098832322@qq.com；\n\n8.1、（心情好就去改）￣ω￣=；\n\n8.2、还有几个小想法，以后有时间再加新功能好啦；\n\n"
+        android:textSize="16sp"/>
+
+</LinearLayout>
